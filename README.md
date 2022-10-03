@@ -14,4 +14,16 @@ Corrections of the exercices are available at
 [github.com/forax/write_your_own_java_framework](https://github.com/forax/write_your_own_java_framework).
 
 
-coucou je suis modifié
+# RAPPEL GIT
+
+```bash
+git clone <lien ssh> # clone un dépot distant
+git add <fichier> # indique à git de traquer le fichier
+git commit <nom du commit> # indique à git d'enregistrer les modifications sur les fichiers traqués
+git push # met en ligne les commits réalisés
+```
+
+HEAD -> la position courante dans l'arbre git
+local/master -> la copie de la branche master en local (on écrit dessus directement)
+origin/master -> la copie de la branche master en ligne (on écrit pas dessus, mais on la modifie via des commit/push)
+
