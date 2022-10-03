@@ -20,13 +20,13 @@ public final class JSONWriter {
     private static final ClassValue<List<Generator>> PROPERTIES_CLASS_VALUE = new ClassValue<>() {
         @Override
         protected List<Generator> computeValue(Class<?> type) {
-            var beanInfo = Utils.beanInfo(type);
             List<PropertyDescriptor> properties;
 
             if (type.isRecord()) {
                 properties = recordProperties(type);
             }
             else {
+                var beanInfo = Utils.beanInfo(type);
                 properties =  Arrays.stream(beanInfo.getPropertyDescriptors()).toList();
             }
 
