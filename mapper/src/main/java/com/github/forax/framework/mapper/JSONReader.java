@@ -212,7 +212,9 @@ public class JSONReader {
 
 
   public record Collector<B>(Function<? super String, ? extends Type> qualifier,
-                             Supplier<? extends B> supplier, Collector.Populater<B> populater, Function<? super B, ?> finisher) {
+                             Supplier<? extends B> supplier,
+                             Collector.Populater<B> populater,
+                             Function<? super B, ?> finisher) {
     public interface Populater<B> {
       void populate(B builder, String key, Object value);
     }

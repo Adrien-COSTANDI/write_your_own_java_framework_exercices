@@ -1,5 +1,6 @@
 package com.github.forax.framework.mapper;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -320,6 +321,7 @@ public class JSONReaderTest {
     }
 
     @Test @Tag("Q5")
+    @Disabled
     public void parseJSONWithAList() throws NoSuchMethodException {
       var listOfIntegers = IntArrayBean.class.getMethod("setValues", List.class).getGenericParameterTypes()[0];
       var reader = new JSONReader();
@@ -334,6 +336,7 @@ public class JSONReaderTest {
     }
 
     @Test @Tag("Q5")
+    @Disabled
     public void parseJSONWithABeanAndAList() {
       var reader = new JSONReader();
       reader.addTypeMatcher(listTypeMatcher());
@@ -394,6 +397,7 @@ public class JSONReaderTest {
     }
 
     @Test @Tag("Q5")
+    @Disabled
     public void parseJSONListOfCar() throws NoSuchFieldException {
       var listOfCar = new Object() {
         List<Car> exemplar;

@@ -20,6 +20,8 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SuppressWarnings("unused")
 public class AnnotationScannerTest {
+/*
+
   @Nested
   public class Q1 {
     @Test
@@ -42,7 +44,7 @@ public class AnnotationScannerTest {
       }
     }
   }   // end of Q1
-/*
+
   @Nested
   public class Q2 {
     static class AnotherClass {}

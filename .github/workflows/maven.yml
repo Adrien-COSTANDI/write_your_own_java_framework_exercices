@@ -6,7 +6,7 @@ on:
       - uses: actions/setup-java@v3
         with:
           distribution: 'zulu' # See 'Supported distributions' for available options
-          java-version: '19'
+          java-version: '24'
       - run: mvn test
   pull_request:
     branches: [ master ]
@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ 19 ]
+        java: [ 24 ]
     name: Java ${{ matrix.java }}
     steps:
       - uses: actions/checkout@v2
