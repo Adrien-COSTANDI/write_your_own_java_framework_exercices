@@ -21,7 +21,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class InterceptorRegistryTest {
-  /*
+
   @Nested
   public class Q1 {
 
@@ -59,7 +59,6 @@ public class InterceptorRegistryTest {
           () -> assertThrows(NullPointerException.class, () -> proxy.say("hello", null))
       );
     }
-
     @Retention(RUNTIME)
     @Target(METHOD)
     @interface Tagged { }
@@ -337,6 +336,7 @@ public class InterceptorRegistryTest {
     }
   }  // end of Q4
 
+/*
 
   @Nested
   public class Q5 {

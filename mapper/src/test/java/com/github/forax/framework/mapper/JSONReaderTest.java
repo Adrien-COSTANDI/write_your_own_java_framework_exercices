@@ -6,23 +6,12 @@ import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
-import java.util.StringJoiner;
+import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.assertAll;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JSONReaderTest {
-  /*
+
   @Nested
   public class Q1 {
 
@@ -270,7 +259,6 @@ public class JSONReaderTest {
 
   }  // end of Q4
 
-
   @Nested
   public class Q5 {
     @Test @Tag("Q5")
@@ -430,7 +418,7 @@ public class JSONReaderTest {
 
   }  // end of Q5
 
-
+/*
   @Nested
   public class Q6 {
 

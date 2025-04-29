@@ -16,5 +16,13 @@ import java.util.Set;
 import java.util.stream.Stream;
 
 public class AnnotationScanner {
-  // TODO
+    static Stream<String> findAllJavaFilesInFolder(Path folder) throws IOException {
+        if (!Files.isDirectory(folder)) {
+            throw new IllegalArgumentException(folder + "is not a folder");
+        }
+        Files.newDirectoryStream(folder).forEach(path -> System.out.println(path.getFileName()));
+
+        return null;
+    }
+    // TODO
 }
